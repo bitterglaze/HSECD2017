@@ -1,0 +1,13 @@
+<%
+colors = [
+  ['красный', 'red' ],
+  ['синий', 'blue'],
+  ['голубой', 'cyan']
+]
+%>
+
+<h1>Counter</h1>
+
+<% colors.each do |color| %>
+  <%= render 'counter', color: color %>
+<% end %>
